@@ -1,0 +1,36 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "आज आप कैसे हैं?"
+
+  utter_cheer_up:
+  - text: "यहां आपको खुश करने के लिए चुटकुला है:बंता- तुम खाली पेट होने पर कितने केले खा सकते हो? संता (कुछ पल सोचकर कहा)- मैं 6 केले खा सकता हूँ।बंता ने हँसते हुए जवाब दिया- गलत जवाब दोस्त,पहला केला खा लेने के बाद तुम्हारा पेट खाली कहां रहेगा !?"
+
+  utter_did_that_help:
+  - text: "आशा है कि इससे मदद मिली"
+
+  utter_happy:
+  - text: "उत्तम, जारी रखें!"
+
+  utter_goodbye:
+  - text: "अलविदा,मैं अब चलता हूँ"
+
+  utter_iamabot:
+  - text: "मैं एक हिंदी बॉट हूँ ।"
+
+  utter_cheer_up_2:
+  - text: "यहां आपको खुश करने के लिए चुटकुला है: टीचर- इतने दिन कहां थे, स्कूल क्यों नहीं आए? गोलू- बर्ड फ्लू हो गया था मैम। टीचर- पर ये तो पक्षियों को होता है इंसानों को नहीं। गोलू- इंसान समझा ही कहां आपने...रोज तो मुर्गा बना देती हो..!!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
